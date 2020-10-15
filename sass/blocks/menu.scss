@@ -1,0 +1,48 @@
+$second:#e5493a;
+
+.menu{
+	display:flex;
+}
+
+.menu__element{
+margin-right:22px;
+
+	&:last-child{
+	margin-right:0px;
+	}
+	
+}
+
+.menu__link{
+  font-size: 12px;
+  font-family: "Raleway";
+  color: #707070;
+  text-transform: uppercase;
+  line-height: 1.667;
+  text-decoration:none;
+  display:inline-block;
+  transition-duration:500ms;
+  transition-property:color;
+
+  	  &::before{
+  			content:"";
+  			display:block;
+  			width:8px;
+  			height:2px;
+  			background-color:$second;
+  			margin-bottom:2px;
+ 			opacity:0;
+  			transition-duration:500ms;
+  			transition-property:opacity;
+ 	 }
+
+ 	 &:hover{
+ 	 	
+ 	 		&::before{
+ 	 		opacity:1;
+ 	 		}
+ 	 	color:$second;
+
+ 	 }
+
+}

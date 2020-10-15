@@ -1,0 +1,34 @@
+.header{
+	border-bottom:4px solid $second;
+};
+
+.header__wrap{
+	display:flex;
+	justify-content:space-between;
+	padding-top:55px;
+	padding-bottom:55px;
+	align-items:center;
+};
+
+.header__logo{
+	maring-right:15px;
+}
+
+.header__menu{
+	padding:0;
+	margin:0;
+	list-style:none;
+};
+
+@media(max-width:764px){
+	.header__wrap{
+		flex-direction:column;
+		padding-top:26px;
+		padding-bottom:26px;
+	}
+
+	.header__logo{
+	margin-right:0px;
+	margin-bottom:8px;
+}
+};
